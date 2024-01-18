@@ -2,6 +2,8 @@ import praw
 import credentials
 import re
 import matplotlib.pyplot as plt
+import nltk
+#nltk.download('stopwords')
 from nltk.corpus import stopwords
 from collections import Counter
 
@@ -40,4 +42,4 @@ for word, count in top_words:
 plt.pie(frequencies, labels=labels, autopct="%1.1f%%", shadow=True, startangle=90)
 plt.axis('equal')
 plt.title(f"Top 10 most used words in r/{subreddit}")
-plt.savefig("pie_chart")
+plt.savefig("pie_chart2")
